@@ -12,14 +12,14 @@ STRUCTURE
 
 In a RESTful API, endpoints (URLs) define the structure of the API and how end users access data from our application using the HTTP methods - GET, POST, PUT, DELETE. Endpoints should be logically organized around collections and elements, both of which are resources.
 
-In our case, we have one single resource, customerapp, so we will use the following URLS - /customerapp/api/customer and customerapp/api/customer/<id>/ for collections and elements, respectively:
+In our case, we have one single resource, customerapp, so we will use the following URLS - /customerapp/api/customer and customerapp/api/customer/{id}/ for collections and elements, respectively:
 
 URL -   http://192.168.1.9:3003/customerapp/api/customer/
-HTTP Method -   GET
-CRUD Method -   READ
-Description -   Get all customer data
+<br>HTTP Method -   GET
+<br>CRUD Method -   READ
+<br>Description -   Get all customer data
 
-URL -   http://192.168.1.9:3003/customerapp/api/customer/<id>/
+URL -   http://192.168.1.9:3003/customerapp/api/customer/{id}/
 HTTP Method -   GET
 CRUD Method -   READ
 Description -   Get a single customer data
@@ -29,12 +29,12 @@ HTTP Method -   POST
 CRUD Method -   CREATE
 Description -   Create new customer data
 
-URL -   http://192.168.1.9:3003/customerapp/api/customer/<id>/
+URL -   http://192.168.1.9:3003/customerapp/api/customer/{id}/
 HTTP Method -   PUT
 CRUD Method -   UPDATE
 Description -   Update new customer data
 
-URL -   http://192.168.1.9:3003/customerapp/api/customer/<id>/
+URL -   http://192.168.1.9:3003/customerapp/api/customer/{id}/
 HTTP Method -   DELETE
 CRUD Method -   DELETE
 Description -   Delete a customer data
@@ -45,10 +45,11 @@ TOKEN GENERATIONS
 To get a token first we need to request, so we can log in
 
 URL - http://192.168.1.9:3003/api/token/
-username : anuraj
-password : anuraj@123
+<br>username : anuraj
+<br>password : anuraj@123
 
 after that, we get the token
+<br>
 {
     "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY0MjI0MDM4MSwiaWF0IjoxNjQyMTUzOTgxLCJqdGkiOiJmZjczNTA4MjBiYzQ0YmE4YmE1NGVlYjc5YmJlYTljOSIsInVzZXJfaWQiOjF9",
     "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMTU0MjgxLCJpYXQiOjE2NDIxNTM5ODEsImp0aSI6IjY5YWU5MTZkN2YzMzRjZWY5NzQ4YTA0MjJmNmJjZTY3IiwidXNlcl9pZCI6MX0"
