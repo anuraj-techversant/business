@@ -1,14 +1,14 @@
-SIMPLE CRUD API WITH DJANGO REST FRAMEWORK
+<b>SIMPLE CRUD API WITH DJANGO REST FRAMEWORK</b>
 
-REQUIREMENTS
-1.  Django
+<b>REQUIREMENTS</b>
+1.  django
 2.  djangorestframework
 3.  djangorestframework-simplejwt
 4.  pyjwt
 5.  psycopg2-binary
 
 
-STRUCTURE
+<b>STRUCTURE</b>
 
 In a RESTful API, endpoints (URLs) define the structure of the API and how end users access data from our application using the HTTP methods - GET, POST, PUT, DELETE. Endpoints should be logically organized around collections and elements, both of which are resources.
 
@@ -20,27 +20,27 @@ URL -   http://192.168.1.9:3003/customerapp/api/customer/
 <br>Description -   Get all customer data
 
 URL -   http://192.168.1.9:3003/customerapp/api/customer/{id}/
-HTTP Method -   GET
-CRUD Method -   READ
-Description -   Get a single customer data
+<br>HTTP Method -   GET
+<br>CRUD Method -   READ
+<br>Description -   Get a single customer data
 
 URL -   http://192.168.1.9:3003/customerapp/api/customer/
-HTTP Method -   POST
-CRUD Method -   CREATE
-Description -   Create new customer data
+<br>HTTP Method -   POST
+<br>CRUD Method -   CREATE
+<br>Description -   Create new customer data
 
 URL -   http://192.168.1.9:3003/customerapp/api/customer/{id}/
-HTTP Method -   PUT
-CRUD Method -   UPDATE
-Description -   Update new customer data
+<br>HTTP Method -   PUT
+<br>CRUD Method -   UPDATE
+<br>Description -   Update new customer data
 
 URL -   http://192.168.1.9:3003/customerapp/api/customer/{id}/
-HTTP Method -   DELETE
-CRUD Method -   DELETE
-Description -   Delete a customer data
+<br>HTTP Method -   DELETE
+<br>CRUD Method -   DELETE
+<br>Description -   Delete a customer data
 
 
-TOKEN GENERATIONS
+<b>TOKEN GENERATIONS</b>
 
 To get a token first we need to request, so we can log in
 
@@ -55,7 +55,7 @@ after that, we get the token
     "access": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMTU0MjgxLCJpYXQiOjE2NDIxNTM5ODEsImp0aSI6IjY5YWU5MTZkN2YzMzRjZWY5NzQ4YTA0MjJmNmJjZTY3IiwidXNlcl9pZCI6MX0"
 }
 
-COMMANDS
+<b>COMMANDS</b>
 
 Get all customer
 http GET http://192.168.1.9:3003/customerapp/api/customer/ "Authorization: Bearer {YOUR_TOKEN}"
