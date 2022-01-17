@@ -1,4 +1,6 @@
-
+"""
+The urls.py contains url defined unser the customer app.
+"""
 from django.conf.urls import url
 from customerapp import views
 
